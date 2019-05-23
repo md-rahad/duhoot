@@ -1,0 +1,75 @@
+/*========================
+      Reset Css 
+=========================*/
+@import "variables";
+@import "mixins";
+@import "reset";
+
+/* Header Section */
+header {
+  overflow-x: hidden;
+}
+
+.navbar {
+  padding: 0;
+
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul.navbar-nav {
+    li {
+      a {
+        text-transform: uppercase;
+        color: #96a6a7;
+        font-family: $gotham-medium;
+        padding: 10px 15px;
+        display: block;
+      }
+    }
+  }
+
+  form.form-inline {
+    .btn:first-of-type {
+      background: #e2dee0;
+      border-radius: 0;
+      padding: 21px 26px;
+      border: 0;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    .btn:last-child {
+      background: #e94e38;
+      padding: 25px 30px;
+      border-radius: 0;
+      color: #fff;
+      font-size: 17px;
+      position: relative;
+      border: 0;
+
+      &:after {
+        position: absolute;
+        height: 100%;
+        width: 1000px;
+        background: #e94e38;
+        top: 0;
+        left: 100%;
+        content: "";
+      }
+
+      i.fa {
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+li a {
+  font-family: $gotham-medium;
+}
+
+input.search {
+  display: none;
+}

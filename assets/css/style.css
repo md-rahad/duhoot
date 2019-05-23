@@ -1,0 +1,101 @@
+/*========================
+      Reset Css 
+=========================*/
+/*Font Faces*/
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("../fonts/Gotham-Book.eot");
+  src: url("../fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book.woff2") format("woff2"), url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../fonts/Gotham-Bold.eot");
+  src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("../fonts/Gotham-Medium.eot");
+  src: url("../fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Medium.woff2") format("woff2"), url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.ttf") format("truetype"), url("../fonts/Gotham-Medium.svg#Gotham-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+a,
+a:hover,
+:hover {
+  text-decoration: none;
+}
+
+:focus,
+.btn:focus,
+button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+body {
+  font-family: "Gotham-Book";
+  font-size: 14px;
+}
+
+/* Header Section */
+header {
+  overflow-x: hidden;
+}
+
+.navbar {
+  padding: 0;
+}
+.navbar .navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+.navbar ul.navbar-nav li a {
+  text-transform: uppercase;
+  color: #96a6a7;
+  font-family: "Gotham-Medium";
+  padding: 10px 15px;
+  display: block;
+}
+.navbar form.form-inline .btn:first-of-type {
+  background: #e2dee0;
+  border-radius: 0;
+  padding: 21px 26px;
+  border: 0;
+  font-size: 22px;
+  color: #fff;
+}
+.navbar form.form-inline .btn:last-child {
+  background: #e94e38;
+  padding: 25px 30px;
+  border-radius: 0;
+  color: #fff;
+  font-size: 17px;
+  position: relative;
+  border: 0;
+}
+.navbar form.form-inline .btn:last-child:after {
+  position: absolute;
+  height: 100%;
+  width: 1000px;
+  background: #e94e38;
+  top: 0;
+  left: 100%;
+  content: "";
+}
+.navbar form.form-inline .btn:last-child i.fa {
+  margin-right: 6px;
+}
+
+li a {
+  font-family: "Gotham-Medium";
+}
+
+input.search {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

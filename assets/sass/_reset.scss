@@ -1,0 +1,22 @@
+/*Font Faces*/
+@include font-face("Gotham-Book", "../fonts/Gotham-Book", normal, normal);
+
+@include font-face("Gotham-Bold", "../fonts/Gotham-Bold", bold, normal);
+
+@include font-face("Gotham-Medium", "../fonts/Gotham-Medium", 500, normal);
+
+a,
+a:hover,
+:hover {
+  text-decoration: none;
+}
+:focus,
+.btn:focus,  
+button:focus {
+  box-shadow: none;
+  outline: none;
+}
+body {
+  font-family: $gotham-book;   
+  font-size: 14px;
+}
