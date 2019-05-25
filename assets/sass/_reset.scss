@@ -11,12 +11,22 @@ a:hover,
   text-decoration: none;
 }
 :focus,
-.btn:focus,  
+.btn:focus,
 button:focus {
   box-shadow: none;
   outline: none;
 }
+
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
 body {
-  font-family: $gotham-book;   
+  font-family: $gotham-book;
   font-size: 14px;
 }

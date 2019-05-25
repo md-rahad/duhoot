@@ -36,6 +36,17 @@ button:focus {
   outline: none;
 }
 
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+
 body {
   font-family: "Gotham-Book";
   font-size: 14px;
@@ -59,6 +70,9 @@ header {
   font-family: "Gotham-Medium";
   padding: 10px 15px;
   display: block;
+}
+.navbar form.form-inline input.search {
+  display: none;
 }
 .navbar form.form-inline .btn:first-of-type {
   background: #e2dee0;
@@ -90,12 +104,71 @@ header {
   margin-right: 6px;
 }
 
-li a {
-  font-family: "Gotham-Medium";
+/* Search Section */
+#search-section {
+  background: url("../images/search-bg.jpg") no-repeat scroll center center/cover;
+  min-height: 375px;
+  position: relative;
+  z-index: 1;
+  padding: 60px 0;
 }
-
-input.search {
-  display: none;
+#search-section:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+#search-section h2.search-title {
+  font-family: "Gotham-Medium";
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#search-section form .form-group .form-control {
+  background: url("../images/select-arrow.png"), rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: 93% 53%;
+  color: #fff;
+  border: 1px solid #858483;
+  height: 50px;
+  border-radius: 30px;
+  padding: 0 20px;
+  margin-bottom: 25px;
+}
+#search-section form .form-group .form-control::-moz-placeholder {
+  color: #fff;
+}
+#search-section form .form-group .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+#search-section form .form-group .form-control::-ms-input-placeholder {
+  color: #fff;
+}
+#search-section form .form-group .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+#search-section form .form-group .form-control::placeholder {
+  color: #fff;
+}
+#search-section form .form-group select.form-control option {
+  background: #fff;
+  color: #444;
+}
+#search-section form .form-group input[type=text].form-control {
+  background: blue;
+}
+#search-section form .form-group button[type=submit] {
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 0px;
+  display: block;
+  margin-top: 25px;
+  background: #e94e38;
+  padding: 12px 35px;
+  border-radius: 30px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

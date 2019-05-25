@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+	<!-- Start Header Section -->
 	<header>
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light">
@@ -52,6 +52,50 @@
 			</nav>
 		</div>
 	</header>
+	<!-- End Header Section -->
+
+	<!-- Start Search Section -->
+	<div id="search-section" class="d-flex flex-column justify-content-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<h2 class="search-title">What are you looking for ?</h2>
+					<form action="#">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<select name="country" class="form-control">
+										<option>..Select</option>
+										<option value="bd">Banladesh</option>
+										<option value="ind">India</option>
+										<option value="pk">Pakistan</option>
+										<option value="db">Dubai</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<select name="category" class="form-control">
+										<option value="education">Education</option>
+										<option value="pk">Pakistan</option>
+										<option value="db">Dubai</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Keywords,name,date...">
+									<button class="btn" type="submit">Search</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Search Section -->
+
 
 	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 	<script src="node_modules/popper.js/dist/popper.min.js"></script>
